@@ -161,10 +161,10 @@ public class MainActivity extends AppCompatActivity {
                     conditionTV.setText(condition);
                     if (isDay == 1) {
                         //morning
-                        //Picasso.get().load(R.drawable.day_background).into(backIV);
+                        Picasso.get().load("https://images.unsplash.com/photo-1614754844959-5e29c8ac2b26?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWRzJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww").into(backIV);
                     } else {
                         //night
-                        // Picasso.get().load(R.drawable.night_background).into(backIV);
+                        Picasso.get().load("https://images.unsplash.com/photo-1614777959970-6774563e87f4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fG5pZ2h0JTIwc2t5JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww").into(backIV);
                     }
 
                     JSONObject forecastObj = response.getJSONObject("forecast");
